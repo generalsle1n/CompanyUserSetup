@@ -40,6 +40,8 @@
             managerUserText = new TextBox();
             tempalteUserText = new TextBox();
             lastNameText = new TextBox();
+            extraSettingsBox = new CheckedListBox();
+            createUser = new Button();
             SuspendLayout();
             // 
             // label1
@@ -138,12 +140,33 @@
             lastNameText.Size = new Size(209, 27);
             lastNameText.TabIndex = 12;
             // 
+            // extraSettingsBox
+            // 
+            extraSettingsBox.FormattingEnabled = true;
+            extraSettingsBox.Items.AddRange(new object[] { "MSNavision", "MSIntune", "MSProject", "MSOffice" });
+            extraSettingsBox.Location = new Point(483, 40);
+            extraSettingsBox.Name = "extraSettingsBox";
+            extraSettingsBox.Size = new Size(144, 224);
+            extraSettingsBox.TabIndex = 13;
+            // 
+            // createUser
+            // 
+            createUser.Location = new Point(12, 312);
+            createUser.Name = "createUser";
+            createUser.Size = new Size(142, 126);
+            createUser.TabIndex = 14;
+            createUser.Text = "Create User";
+            createUser.UseVisualStyleBackColor = true;
+            createUser.Click += createUser_Click;
+            // 
             // CreateNewUserMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(659, 450);
+            Controls.Add(createUser);
+            Controls.Add(extraSettingsBox);
             Controls.Add(lastNameText);
             Controls.Add(tempalteUserText);
             Controls.Add(managerUserText);
@@ -176,5 +199,7 @@
         private TextBox managerUserText;
         private TextBox tempalteUserText;
         private TextBox lastNameText;
+        private CheckedListBox extraSettingsBox;
+        private Button createUser;
     }
 }
