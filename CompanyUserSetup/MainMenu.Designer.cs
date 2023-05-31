@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            CreateNewUser = new Button();
             SuspendLayout();
+            // 
+            // CreateNewUser
+            // 
+            CreateNewUser.Location = new Point(10, 40);
+            CreateNewUser.Name = "CreateNewUser";
+            CreateNewUser.Size = new Size(410, 30);
+            CreateNewUser.TabIndex = 0;
+            CreateNewUser.Text = "Create New User";
+            CreateNewUser.UseVisualStyleBackColor = true;
             // 
             // MainMenu
             // 
@@ -36,6 +46,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(432, 403);
+            Controls.Add(CreateNewUser);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "MainMenu";
             Text = "Main Form";
@@ -43,5 +54,7 @@
         }
 
         #endregion
+
+        private Button CreateNewUser;
     }
 }
