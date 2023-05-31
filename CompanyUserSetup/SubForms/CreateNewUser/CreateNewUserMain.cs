@@ -1,4 +1,5 @@
-﻿using CompanyUserSetup.Model;
+﻿using CompanyUserSetup.Manager;
+using CompanyUserSetup.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +51,8 @@ namespace CompanyUserSetup.SubForms.CreateNewUser
                         break;
                 }
             }
+
+            LdapManager _manager = new LdapManager();
         }
     }
 }
