@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // MainMenu
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            BackColor = SystemColors.ControlDarkDark;
+            ClientSize = new Size(432, 403);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "MainMenu";
+            Text = "Main Form";
+            ResumeLayout(false);
         }
 
         #endregion
