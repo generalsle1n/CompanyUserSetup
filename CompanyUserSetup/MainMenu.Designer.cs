@@ -39,6 +39,7 @@
             CreateNewUser.TabIndex = 0;
             CreateNewUser.Text = "Create New User";
             CreateNewUser.UseVisualStyleBackColor = true;
+            CreateNewUser.Click += CreateNewUser_Click;
             // 
             // MainMenu
             // 
